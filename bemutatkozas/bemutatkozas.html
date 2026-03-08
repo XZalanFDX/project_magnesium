@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Hub – Bemutatkozás</title>
+    <link rel="icon" type="image/x-icon" href="resc/headerlogo.png">
+    <link rel="stylesheet" href="bemutatkozas.css">
+</head>
+<body>
+
+    <div class="hatter" id="hatter">
+        <video autoplay loop muted playsinline>
+            <source src="resc/hattervid.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <a href="https://ecohubhungary.netlify.app/">
+            <img src="resc/logo.png" alt="Earth Hub logó">
+        </a>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="header-nav" id="headerNav">
+            <button class="header_bt" onclick="ugorj('hero')">Bemutatkozás</button>
+            <button class="header_bt" onclick="ugorj('rolunk')">Rólunk</button>
+            <button class="header_bt" onclick="ugorj('tortenet')">Történetünk</button>
+            <button class="header_bt" onclick="ugorj('csapat')">Csapatunk</button>
+            <a href="https://ecohubhungary.netlify.app/" class="header_bt ajanlat">← Főoldal</a>
+        </nav>
+    </header>
+
+    <div class="scroll-wrap" id="scrollWrap">
+
+        <section class="dia hero-dia" id="hero">
+            <div class="hero-tartalom">
+                <span class="cimke">Bemutatkozás</span>
+                <h1>Célvezérelt<br><strong>vállalkozás.</strong></h1>
+                <p class="hero-lead">Környezetvédelmi vállalkozás és közösségi platform egyben — ahol az üzleti gondolkodás a bolygó szolgálatában áll.</p>
+                <button class="scroll-le-gomb" onclick="ugorj('rolunk')">↓</button>
+            </div>
+        </section>
+
+        <section class="dia fekete" id="rolunk">
+            <div class="reszletes-wrap">
+                <div class="reszletes-bal">
+                    <span class="cimke">Rólunk</span>
+                    <h2>Nem választunk az eredményesség és a felelősség között.</h2>
+                    <div class="stat-sor">
+                        <div class="mini-stat">
+                            <span class="mini-szam">4,8M</span>
+                            <span class="mini-felirat">fa elültetve</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-szam">4</span>
+                            <span class="mini-felirat">kontinensen</span>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="mini-szam">12 400</span>
+                            <span class="mini-felirat">partnerrel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reszletes-jobb">
+                    <p class="lead">Hisszük, hogy az eredményesség és a felelősség nem zárja ki egymást — sőt, egymást erősíti. Az Earth Hub azért jött létre, hogy megmutassa: a fenntarthatóság nemcsak érték, hanem életképes üzleti modell is.</p>
+                    <p class="body-text">Szakmai csapatunk vállalatoknak, önkormányzatoknak és magánszemélyeknek nyújt zöld megoldásokat — miközben egy aktív mozgalmat is építünk azok számára, akik tenni szeretnének a környezetükért.</p>
+                    <p class="body-text">Két lábbal állunk a földön: az egyikkel a piacon, a másikkal a közösségben. Profi megoldásokat nyújtunk vállalatoknak és önkormányzatoknak, miközben közösségi programokon keresztül az embereket is bevonjuk a változásba.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dia fekete" id="tortenet">
+            <div class="timeline-wrap">
+                <div class="timeline-fejlec">
+                    <span class="cimke">Történetünk</span>
+                    <h2>Hogyan jutottunk idáig.</h2>
+                </div>
+                <div class="timeline">
+
+                    <div class="timeline-vonal"></div>
+
+                    <div class="timeline-elem bal">
+                        <div class="timeline-tartalom">
+                            <span class="timeline-ev">2019</span>
+                            <h4>Az ötlet születése</h4>
+                            <p>Egy egyszerű felismerésből indult minden — a természet és az üzlet nem ellenségek.</p>
+                        </div>
+                        <div class="timeline-pont"></div>
+                    </div>
+
+                    <div class="timeline-elem jobb">
+                        <div class="timeline-pont"></div>
+                        <div class="timeline-tartalom">
+                            <span class="timeline-ev">2020</span>
+                            <h4>Az első projekt</h4>
+                            <p>Az első faültetési akció több száz lelkes résztvevővel, három helyszínen egyszerre.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-elem bal">
+                        <div class="timeline-tartalom">
+                            <span class="timeline-ev">2021</span>
+                            <h4>Vállalati partnerségek</h4>
+                            <p>Az első vállalati ESG-tanácsadói megbízások — a fenntarthatóság üzleti értékké vált.</p>
+                        </div>
+                        <div class="timeline-pont"></div>
+                    </div>
+
+                    <div class="timeline-elem jobb">
+                        <div class="timeline-pont"></div>
+                        <div class="timeline-tartalom">
+                            <span class="timeline-ev">2023</span>
+                            <h4>Nemzetközi terjeszkedés</h4>
+                            <p>4 kontinensre bővítettük tevékenységünket, 12 400 aktív partnerrel az oldalunkon.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-elem bal utolso">
+                        <div class="timeline-tartalom">
+                            <span class="timeline-ev">2025</span>
+                            <h4>Ma</h4>
+                            <p>4,8 millió elültetett fa, egy globális közösség és egyetlen változatlan cél: a bolygó.</p>
+                        </div>
+                        <div class="timeline-pont aktiv"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="dia fekete" id="csapat">
+            <div class="csapat-wrap">
+                <div class="csapat-fejlec">
+                    <span class="cimke">Csapatunk</span>
+                    <h2>Az emberek<br>a változás mögött.</h2>
+                </div>
+                <div class="csapat-grid">
+                    <div class="csapat-kartya">
+                        <div class="csapat-kep-placeholder">👤</div>
+                        <h4>Lorem Ipsum</h4>
+                        <span class="csapat-szerep">Alapító & CEO</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="csapat-kartya">
+                        <div class="csapat-kep-placeholder">👤</div>
+                        <h4>Lorem Ipsum</h4>
+                        <span class="csapat-szerep">Környezeti igazgató</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="csapat-kartya">
+                        <div class="csapat-kep-placeholder">👤</div>
+                        <h4>Lorem Ipsum</h4>
+                        <span class="csapat-szerep">Közösségi vezető</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div class="csapat-kartya">
+                        <div class="csapat-kep-placeholder">👤</div>
+                        <h4>Lorem Ipsum</h4>
+                        <span class="csapat-szerep">ESG tanácsadó</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dia fekete cta-dia" id="cta">
+            <div class="cta-tartalom">
+                <span class="cimke">Dolgozzunk együtt</span>
+                <h2>Készen állsz<br>a változásra?</h2>
+                <p class="lead">Legyen szó zöldítési projektről, vállalati tanácsadásról vagy közösségi programról — szívesen megmutatjuk, hogyan tudunk segíteni.</p>
+                <div class="cta-gombok">
+                    <a href="https://ecohubhungary.netlify.app/" class="cta-gomb zold">Ajánlatkérés →</a>
+                    <a href="https://ecohubhungary.netlify.app/" class="cta-gomb">← Vissza a főoldalra</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <nav class="oldal-nav">
+        <span class="nav-pont aktiv" data-cel="hero"></span>
+        <span class="nav-pont" data-cel="rolunk"></span>
+        <span class="nav-pont" data-cel="tortenet"></span>
+        <span class="nav-pont" data-cel="csapat"></span>
+        <span class="nav-pont" data-cel="cta"></span>
+    </nav>
+
+    <script>
+        const wrap = document.getElementById('scrollWrap');
+        const diak = document.querySelectorAll('.dia');
+        const pontok = document.querySelectorAll('.nav-pont');
+        const hatter = document.getElementById('hatter');
+
+        function ugorj(id) {
+            const cel = document.getElementById(id);
+            if (cel) {
+                cel.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('headerNav').classList.remove('nyitva');
+                document.getElementById('hamburger').classList.remove('aktiv');
+            }
+        }
+
+        wrap.addEventListener('scroll', () => {
+            let aktualis = 0;
+            diak.forEach((dia, i) => {
+                if (dia.getBoundingClientRect().top <= window.innerHeight / 2) aktualis = i;
+            });
+            pontok.forEach(p => p.classList.remove('aktiv'));
+            if (pontok[aktualis]) pontok[aktualis].classList.add('aktiv');
+            hatter.style.opacity = aktualis === 0 ? '1' : '0';
+        });
+
+        pontok.forEach(pont => {
+            pont.addEventListener('click', () => ugorj(pont.dataset.cel));
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const headerNav = document.getElementById('headerNav');
+
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            headerNav.classList.toggle('nyitva');
+            hamburger.classList.toggle('aktiv');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!headerNav.contains(e.target) && !hamburger.contains(e.target)) {
+                headerNav.classList.remove('nyitva');
+                hamburger.classList.remove('aktiv');
+            }
+        });
+
+        // Jobb klikk tiltása
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Gyorsbillentyűk tiltása (F12, Ctrl+U)
+document.onkeydown = function(e) {
+    if(e.keyCode == 123 || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+        return false;
+    }
+}
+setInterval(function(){
+  debugger;
+}, 100);
+    </script>
+
+</body>
+</html>
