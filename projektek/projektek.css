@@ -376,17 +376,22 @@ display:flex;
 
 
 
-.scroll-wrap{
-height:auto;
-overflow-y:auto;
-scroll-snap-type:none;
+.scroll-wrap {
+    position: relative;
+    z-index: 10;
+    height: 100%; 
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; 
+    scroll-snap-type: none;
 }
 
-.dia{
-height:auto;
-min-height:100vh;
-padding-top:90px;
-padding-bottom:60px;
+.dia {
+    height: auto;
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    padding-top: 100px; 
+    padding-bottom: 60px;
 }
 
 .hero-dia{
