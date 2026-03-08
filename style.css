@@ -100,7 +100,7 @@ header img {
 .header_bt:hover { color: #fff; }
 .header_bt:hover::after { transform: translateX(0); }
 
-.header_bt.ajanlat {
+.header_bt_ajanlat {
   background: #2d6a2d;
   color: #fff;
   font-weight: 500;
@@ -111,8 +111,8 @@ header img {
   margin-left: 0.5rem;
   transition: background 0.2s ease;
 }
-.header_bt.ajanlat::after { display: none; }
-.header_bt.ajanlat:hover { background: #3a8a3a; }
+.header_bt_ajanlat::after { display: none; }
+.header_bt_ajanlat:hover { background: #3a8a3a; }
 
 
 .hamburger {
@@ -139,7 +139,7 @@ header img {
 }
 
 
-.scroll-wrap {
+.gorgoigazito {
   position: relative;
   z-index: 10;
   height: 100vh;
@@ -149,7 +149,7 @@ header img {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.scroll-wrap::-webkit-scrollbar { display: none; }
+.gorgoigazito::-webkit-scrollbar { display: none; }
 
 
 .dia {
@@ -170,7 +170,7 @@ header img {
   justify-content: center;
 }
 
-.dia-kozep {
+.diakozepeni {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -241,7 +241,7 @@ header img {
   margin-top: 0.4rem;
 }
 
-.bemu-wrap {
+.bemutatkozo {
   display: flex;
   align-items: center;
   gap: 5rem;
@@ -585,14 +585,14 @@ textarea:focus {
   color: #fff;
 }
 
-.lead {
+.simaszoveg {
   font-size: clamp(0.9rem, 1.3vw, 1.05rem);
   font-weight: 300;
   color: rgba(255,255,255,0.7);
   line-height: 1.6;
 }
 
-.body-text {
+.simaszoveg2 {
   font-size: 0.9rem;
   font-weight: 300;
   color: rgba(255,255,255,0.45);
@@ -657,7 +657,7 @@ textarea:focus {
   .kartya-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .bemu-wrap {
+  .bemutatkozo {
     flex-direction: column;
     gap: 2.5rem;
     padding: 0 6vw;
@@ -736,7 +736,7 @@ textarea:focus {
     overflow: hidden;
   }
 
-  .header_bt.ajanlat {
+  .header_bt_ajanlat {
     margin: 0.5rem 1.5rem;
     width: calc(100% - 3rem);
     text-align: center;
@@ -773,7 +773,7 @@ textarea:focus {
     border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
-  .bemu-wrap {
+  .bemutatkozo {
     flex-direction: column;
     gap: 1.8rem;
     padding: 0 1.5rem;
@@ -827,8 +827,8 @@ textarea:focus {
     font-size: clamp(1.8rem, 7vw, 2.5rem);
   }
 
-  .lead { font-size: 0.95rem; }
-  .body-text { font-size: 0.875rem; }
+  .simaszoveg { font-size: 0.95rem; }
+  .simaszoveg2 { font-size: 0.875rem; }
 }
 
 

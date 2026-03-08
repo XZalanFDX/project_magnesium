@@ -16,359 +16,110 @@
         </video>
     </div>
 
-    <div class="lightbox" id="lightbox">
-        <button class="lb-zar" id="lbZar">✕</button>
-        <button class="lb-nav lb-prev" id="lbPrev">←</button>
-        <button class="lb-nav lb-next" id="lbNext">→</button>
-        <div class="lb-tartalom">
-            <div class="lb-kep-wrap">
-                <div class="lb-placeholder" id="lbPlaceholder"></div>
-            </div>
-            <div class="lb-info">
-                <span class="cimke" id="lbKategoria"></span>
-                <h3 id="lbCim"></h3>
-                <p id="lbLeiras"></p>
-                <div class="lb-meta">
-                    <span id="lbHelyszin"></span>
-                    <span id="lbEv"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <header>
-        <a href="index.html">
+        <a href="https://ecohubhungary.netlify.app/">
             <img src="resc/logo.png" alt="Earth Hub logó">
         </a>
         <button class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </button>
         <nav class="header-nav" id="headerNav">
-            <button class="header_bt" onclick="ugorj('hero')">Összes projekt</button>
-            <button class="header_bt" onclick="ugorj('faultetes')">Faültetés</button>
-            <button class="header_bt" onclick="ugorj('bezoldites')">Bezöldítés</button>
-            <button class="header_bt" onclick="ugorj('kozosseg')">Közösségi</button>
-            <a href="https://ecohubhungary.netlify.app/" class="header_bt ajanlat">← Főoldal</a>
+            <a href="https://ecohubhungary.netlify.app/" class="header_bt">Ajánlatkérés</a>
         </nav>
     </header>
-
     <div class="scroll-wrap" id="scrollWrap">
-
         <section class="dia hero-dia" id="hero">
             <div class="hero-tartalom">
-                <span class="cimke">Referenciamunkáink</span>
-                <h1>Amit együtt<br><strong>létrehoztunk.</strong></h1>
+                <br>
+                <br>
+                <h1><strong>Együtt </strong>többet<br>érhetünk el!</h1>
                 <p class="hero-lead">Projektjeink valódi helyeken, valódi emberekkel — betekintés abba, amit közösen tettünk a bolygóért.</p>
-                <button class="scroll-le-gomb" onclick="ugorj('faultetes')">↓</button>
+                <button class="scroll-le-gomb" onclick="ugorj('faultetes')">Tovább</button>
             </div>
             <div class="hero-statisztika">
                 <div class="hero-stat-elem">
-                    <span class="hero-stat-szam">48+</span>
-                    <span class="hero-stat-felirat">befejezett projekt</span>
+                <span class="hero-stat-szam">64+</span>
+                <span class="hero-stat-felirat">befejezett, sikeres projekt</span>
                 </div>
                 <div class="hero-stat-elem">
-                    <span class="hero-stat-szam">4</span>
-                    <span class="hero-stat-felirat">kontinensen</span>
+                <span class="hero-stat-szam">4</span>
+                <span class="hero-stat-felirat">kontinensen</span>
                 </div>
                 <div class="hero-stat-elem">
-                    <span class="hero-stat-szam">2019–</span>
-                    <span class="hero-stat-felirat">óta aktívan</span>
+                <span class="hero-stat-szam">2015</span>
+                <span class="hero-stat-felirat">óta</span>
                 </div>
             </div>
         </section>
-
         <section class="dia fekete" id="faultetes">
             <div class="galeria-wrap container-fluid px-4 px-lg-5">
                 <div class="galeria-fejlec row mb-4">
                     <div class="col-12 d-flex align-items-center justify-content-between">
                         <div>
-                            <span class="cimke">Faültetés</span>
-                            <h2 class="mt-2">Gyökeret eresztve.</h2>
+                        <h2 class="mt-2">Legsikeresebb projektjeink:</h2>
                         </div>
-                        <span class="projekt-szam">18 projekt</span>
-                    </div>
-                </div>
-
-                <div class="row g-2 galeria-grid">
-                    <div class="col-12 col-md-8">
-                        <div class="galeria-elem nagy" data-index="0"
-                            data-cim="Budapest Erdő Projekt"
-                            data-kategoria="Faültetés"
-                            data-leiras="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Közösen 2 400 fát ültettünk el a Budai-hegyek lábánál helyi önkéntes csapatokkal."
-                            data-helyszin="📍 Budapest, HU"
-                            data-ev="📅 2023">
-                            <div class="galeria-placeholder">🌳</div>
-                            <div class="galeria-info">
-                                <h4>Budapest Erdő Projekt</h4>
-                                <p>2 400 fa · 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 d-flex flex-column gap-2">
-                        <div class="galeria-elem" data-index="1"
-                            data-cim="Debrecen Zöld Övezet"
-                            data-kategoria="Faültetés"
-                            data-leiras="Városi parkosítási projekt, amely 600 új fát hozott Debrecen belvárosába."
-                            data-helyszin="📍 Debrecen, HU"
-                            data-ev="📅 2022">
-                            <div class="galeria-placeholder">🌲</div>
-                            <div class="galeria-info">
-                                <h4>Debrecen Zöld Övezet</h4>
-                                <p>600 fa · 2022</p>
-                            </div>
-                        </div>
-                        <div class="galeria-elem" data-index="2"
-                            data-cim="Pécsi Domboldalak"
-                            data-kategoria="Faültetés"
-                            data-leiras="Lejtős területek erdősítése eróziós védelem céljából, 850 tölgy és bükkfa telepítésével."
-                            data-helyszin="📍 Pécs, HU"
-                            data-ev="📅 2022">
-                            <div class="galeria-placeholder">🌿</div>
-                            <div class="galeria-info">
-                                <h4>Pécsi Domboldalak</h4>
-                                <p>850 fa · 2022</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="3"
-                            data-cim="Balaton Parti Sáv"
-                            data-kategoria="Faültetés"
-                            data-leiras="Parti védelmi program, nádas és fűzfa telepítéssel a Balaton ökoszisztémájának védelméért."
-                            data-helyszin="📍 Balatonfüred, HU"
-                            data-ev="📅 2021">
-                            <div class="galeria-placeholder">🍃</div>
-                            <div class="galeria-info">
-                                <h4>Balaton Parti Sáv</h4>
-                                <p>1 200 fa · 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="4"
-                            data-cim="Tisza Menti Erdő"
-                            data-kategoria="Faültetés"
-                            data-leiras="Folyóparti ültetvény a Tisza természetes élővilágának visszaállítása érdekében."
-                            data-helyszin="📍 Szolnok, HU"
-                            data-ev="📅 2021">
-                            <div class="galeria-placeholder">🌱</div>
-                            <div class="galeria-info">
-                                <h4>Tisza Menti Erdő</h4>
-                                <p>3 100 fa · 2021</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="5"
-                            data-cim="Mátra Rehabilitáció"
-                            data-kategoria="Faültetés"
-                            data-leiras="Tűzkárosult területek helyreállítása a Mátrában, 5 éves monitoring programmal kiegészítve."
-                            data-helyszin="📍 Gyöngyös, HU"
-                            data-ev="📅 2020">
-                            <div class="galeria-placeholder">🌾</div>
-                            <div class="galeria-info">
-                                <h4>Mátra Rehabilitáció</h4>
-                                <p>4 800 fa · 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dia fekete" id="bezoldites">
-            <div class="galeria-wrap container-fluid px-4 px-lg-5">
-                <div class="galeria-fejlec row mb-4">
-                    <div class="col-12 d-flex align-items-center justify-content-between">
-                        <div>
-                            <span class="cimke">Épületek bezöldítése</span>
-                            <h2 class="mt-2">Ahol a beton él.</h2>
-                        </div>
-                        <span class="projekt-szam">12 projekt</span>
                     </div>
                 </div>
                 <div class="row g-2 galeria-grid">
-                    <div class="col-12 col-md-4 d-flex flex-column gap-2">
-                        <div class="galeria-elem" data-index="6"
-                            data-cim="Váci Úti Irodaház"
-                            data-kategoria="Bezöldítés"
-                            data-leiras="Budapest legnagyobb zöldtetős irodaházának kialakítása, 1 200 m² élő tetőkerttel és esővíz-gyűjtő rendszerrel."
-                            data-helyszin="📍 Budapest, HU"
-                            data-ev="📅 2024">
-                            <div class="galeria-placeholder">🏢</div>
-                            <div class="galeria-info">
-                                <h4>Váci Úti Irodaház</h4>
-                                <p>1 200 m² · 2024</p>
-                            </div>
-                        </div>
-                        <div class="galeria-elem" data-index="7"
-                            data-cim="Dél-budai Lakópark"
-                            data-kategoria="Bezöldítés"
-                            data-leiras="Homlokzati zöldfalak és erkély-kertek kialakítása 80 lakásos társasházban."
-                            data-helyszin="📍 Budapest, HU"
-                            data-ev="📅 2023">
-                            <div class="galeria-placeholder">🪴</div>
-                            <div class="galeria-info">
-                                <h4>Dél-budai Lakópark</h4>
-                                <p>80 lakás · 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <div class="galeria-elem nagy" data-index="8"
-                            data-cim="MegaCorp Kampusz"
-                            data-kategoria="Bezöldítés"
-                            data-leiras="Vállalati kampusz teljes körű bezöldítése: tetőkert, belső téli kertek, homlokzati zöldfalak és 300 méteres sétány. Az eddigi legnagyobb projektünk."
-                            data-helyszin="📍 Győr, HU"
-                            data-ev="📅 2023">
-                            <div class="galeria-placeholder">🌻</div>
-                            <div class="galeria-info">
-                                <h4>MegaCorp Kampusz</h4>
-                                <p>8 500 m² · 2023</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!--1-->
                     <div class="col-12 col-md-6">
-                        <div class="galeria-elem" data-index="9"
-                            data-cim="Pécsi Kulturális Központ"
-                            data-kategoria="Bezöldítés"
-                            data-leiras="Közintézmény homlokzatának és tetőjének zöldítése, nyilvános tetőterasz kialakítása."
-                            data-helyszin="📍 Pécs, HU"
-                            data-ev="📅 2022">
-                            <div class="galeria-placeholder">🌺</div>
+                        <div class="galeria-elem nagy" data-index="0">
                             <div class="galeria-info">
-                                <h4>Pécsi Kulturális Központ</h4>
-                                <p>2 100 m² · 2022</p>
+                            <h4>Budapest Erdő Projekt</h4>
+                            <p>2 400 fa · 2023</p>
                             </div>
                         </div>
                     </div>
+                    <!--2-->
                     <div class="col-12 col-md-6">
-                        <div class="galeria-elem" data-index="10"
-                            data-cim="Miskolci Üzletsor"
-                            data-kategoria="Bezöldítés"
-                            data-leiras="Belvárosi üzletsor külső homlokzatának átformálása zöld elemekkel és függő kertekkel."
-                            data-helyszin="📍 Miskolc, HU"
-                            data-ev="📅 2021">
-                            <div class="galeria-placeholder">🌼</div>
+                        <div class="galeria-elem nagy" data-index="0">
                             <div class="galeria-info">
-                                <h4>Miskolci Üzletsor</h4>
-                                <p>14 üzlet · 2021</p>
+                            <h4>Budapest Erdő Projekt</h4>
+                            <p>2 400 fa · 2023</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-elem nagy" data-index="0">
+                            <div class="galeria-info">
+                            <h4>Budapest Erdő Projekt</h4>
+                            <p>2 400 fa · 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-elem nagy" data-index="0">
+                            <div class="galeria-info">
+                            <h4>Budapest Erdő Projekt</h4>
+                            <p>2 400 fa · 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="galeria-elem nagy" data-index="0">
+                            <div class="galeria-info">
+                            <h4>Budapest Erdő Projekt</h4>
+                            <p>2 400 fa · 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="dia fekete" id="kozosseg">
-            <div class="galeria-wrap container-fluid px-4 px-lg-5">
-                <div class="galeria-fejlec row mb-4">
-                    <div class="col-12 d-flex align-items-center justify-content-between">
-                        <div>
-                            <span class="cimke">Közösségi programok</span>
-                            <h2 class="mt-2">Együtt, emberekkel.</h2>
-                        </div>
-                        <span class="projekt-szam">18 program</span>
-                    </div>
-                </div>
-                <div class="row g-2 galeria-grid">
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="11"
-                            data-cim="Iskolai Ültetvény Program"
-                            data-kategoria="Közösségi"
-                            data-leiras="24 általános iskola bevonásával indult program, ahol a gyerekek saját kis erdejüket ültetik és gondozzák."
-                            data-helyszin="📍 Országos"
-                            data-ev="📅 2022–">
-                            <div class="galeria-placeholder">🎒</div>
-                            <div class="galeria-info">
-                                <h4>Iskolai Ültetvény Program</h4>
-                                <p>24 iskola · 2022–</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="12"
-                            data-cim="Vállalati Önkéntes Nap"
-                            data-kategoria="Közösségi"
-                            data-leiras="Évente megrendezett tömeges faültetési nap, melyen 12 vállalat 800+ dolgozója vesz részt."
-                            data-helyszin="📍 Budapest, HU"
-                            data-ev="📅 2021–">
-                            <div class="galeria-placeholder">🤝</div>
-                            <div class="galeria-info">
-                                <h4>Vállalati Önkéntes Nap</h4>
-                                <p>800+ résztvevő · évi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="13"
-                            data-cim="Earth Day Budapest"
-                            data-kategoria="Közösségi"
-                            data-leiras="Éves fővárosi rendezvény, amely egy nap alatt 5 000 embert mozgósít a zöld jövőért."
-                            data-helyszin="📍 Budapest, HU"
-                            data-ev="📅 2020–">
-                            <div class="galeria-placeholder">🌍</div>
-                            <div class="galeria-info">
-                                <h4>Earth Day Budapest</h4>
-                                <p>5 000 résztvevő · évi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <div class="galeria-elem nagy" data-index="14"
-                            data-cim="Afrika Reforestation Initiative"
-                            data-kategoria="Közösségi"
-                            data-leiras="A legnagyobb volumenű projektünk: helyi közösségekkel együttműködve 1,2 millió fa ültetése Kenyában és Etiópiában. A projekt 300 helyi munkahelyet teremtett."
-                            data-helyszin="📍 Kenya & Etiópia"
-                            data-ev="📅 2023–">
-                            <div class="galeria-placeholder">🌍</div>
-                            <div class="galeria-info">
-                                <h4>Afrika Reforestation Initiative</h4>
-                                <p>1,2M fa · 300 munkahely · 2023–</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="galeria-elem" data-index="15"
-                            data-cim="Zöld Workshop Sorozat"
-                            data-kategoria="Közösségi"
-                            data-leiras="Havi rendszerességű oktatási és workshopprogramok gyerekek és felnőttek számára egyaránt."
-                            data-helyszin="📍 Országos"
-                            data-ev="📅 2021–">
-                            <div class="galeria-placeholder">📚</div>
-                            <div class="galeria-info">
-                                <h4>Zöld Workshop Sorozat</h4>
-                                <p>48 workshop/év</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="dia fekete cta-dia" id="cta">
             <div class="cta-tartalom">
-                <span class="cimke">Dolgozzunk együtt</span>
-                <h2>Legyen a te<br>projekted a következő.</h2>
-                <p class="lead">Legyen szó faültetésről, épület bezöldítéséről vagy közösségi programról — szívesen megmutatjuk, hogyan tudunk segíteni.</p>
+                <span class="cimke">Dolgozzunk együtt!</span>
+                <h2>Te megálmodod, <br>Mi kivitelezzük</h2>
+                <p class="lead">Legyen szó faültetésről, épület bezöldítéséről vagy közösségi programról mi bármit kivitelezünk</p>
                 <div class="cta-gombok">
-                    <a href="https://ecohubhungary.netlify.app/" class="cta-gomb zold">Ajánlatkérés →</a>
-                    <a href="https://ecohubhungary.netlify.app/" class="cta-gomb">← Vissza a főoldalra</a>
+                <a href="https://ecohubhungary.netlify.app/" class="cta-gomb zold">Ajánlatkérés</a>
+                <a href="https://ecohubhungary.netlify.app/" class="cta-gomb">Vissza a főoldalra</a>
                 </div>
             </div>
         </section>
-
     </div>
-
-    <!-- Oldalsó nav -->
-    <nav class="oldal-nav">
-        <span class="nav-pont aktiv" data-cel="hero"></span>
-        <span class="nav-pont" data-cel="faultetes"></span>
-        <span class="nav-pont" data-cel="bezoldites"></span>
-        <span class="nav-pont" data-cel="kozosseg"></span>
-        <span class="nav-pont" data-cel="cta"></span>
-    </nav>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52pD" crossorigin="anonymous"></script>
     <script>
 
@@ -414,11 +165,6 @@
             }
         });
 
-        const elemek = document.querySelectorAll('.galeria-elem');
-        const lightbox = document.getElementById('lightbox');
-        const lbZar = document.getElementById('lbZar');
-        const lbPrev = document.getElementById('lbPrev');
-        const lbNext = document.getElementById('lbNext');
 
         let aktualisLb = 0;
         const ossz = elemek.length;
@@ -459,18 +205,18 @@
             if (e.key === 'ArrowRight') lbNyit((aktualisLb + 1) % ossz);
         });
         
-        // Jobb klikk tiltása
-document.addEventListener('contextmenu', event => event.preventDefault());
+        // TITKOSÍTÓ
+        document.addEventListener('contextmenu', event => event.preventDefault());
 
-// Gyorsbillentyűk tiltása (F12, Ctrl+U)
-document.onkeydown = function(e) {
-    if(e.keyCode == 123 || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
-        return false;
+
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123 || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+                return false;
     }
 }
-setInterval(function(){
-  debugger;
-}, 100);
+        setInterval(function(){
+        debugger;
+        }, 100);
     </script>
 
 </body>

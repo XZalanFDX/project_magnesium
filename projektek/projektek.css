@@ -1,4 +1,3 @@
-/* ─── RESET ──────────────────────────────────────── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 html, body {
@@ -8,7 +7,6 @@ html, body {
   color: #fff;
 }
 
-/* ─── FONT ───────────────────────────────────────── */
 @font-face {
   font-family: 'Helvetica Neue';
   src: url('fonts/HelveticaNeueLight.otf') format('opentype');
@@ -20,7 +18,7 @@ html, body {
   font-weight: 700;
 }
 
-/* ─── VIDEÓ HÁTTÉR ───────────────────────────────── */
+/* Hatter */
 .hatter {
   position: fixed; inset: 0;
   z-index: 0; pointer-events: none;
@@ -37,7 +35,7 @@ html, body {
   background: rgba(0,0,0,0.55);
 }
 
-/* ─── HEADER ─────────────────────────────────────── */
+/* Fejlec */
 header {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
@@ -68,13 +66,6 @@ header img { height: 36px; }
 }
 .header_bt:hover { color: #fff; }
 .header_bt:hover::after { transform: translateX(0); }
-.header_bt.ajanlat {
-  background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.85);
-  border-radius: 999px; border: 1px solid rgba(255,255,255,0.15);
-  margin-left: 0.5rem; overflow: visible;
-}
-.header_bt.ajanlat::after { display: none; }
-.header_bt.ajanlat:hover { background: rgba(255,255,255,0.14); color: #fff; }
 
 /* Hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.4rem; z-index: 110; }
@@ -83,7 +74,7 @@ header img { height: 36px; }
 .hamburger.aktiv span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.aktiv span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ─── SCROLL WRAP ────────────────────────────────── */
+/* Görgö animacio */
 .scroll-wrap {
   position: relative; z-index: 10;
   height: 100vh; overflow-y: scroll;
@@ -92,7 +83,7 @@ header img { height: 36px; }
 }
 .scroll-wrap::-webkit-scrollbar { display: none; }
 
-/* ─── DIA ────────────────────────────────────────── */
+/* hatter és font - kártyákhoz */
 .dia {
   scroll-snap-align: start; width: 100%; height: 100vh;
   padding-top: 72px;
@@ -101,46 +92,17 @@ header img { height: 36px; }
 }
 .dia.fekete { background: #0a0f0a; }
 
-/* ─── OLDALSÓ NAV ────────────────────────────────── */
-.oldal-nav {
-  position: fixed; right: 1.6rem; top: 50%;
-  transform: translateY(-50%); z-index: 200;
-  display: flex; flex-direction: column; gap: 0.55rem;
-}
-.nav-pont {
-  width: 6px; height: 6px; border-radius: 999px;
-  background: rgba(255,255,255,0.22); cursor: pointer; transition: all 0.3s ease;
-}
-.nav-pont.aktiv { background: #fff; height: 20px; }
-.nav-pont:hover { background: rgba(255,255,255,0.55); }
-
-/* ─── KÖZÖS ELEMEK ───────────────────────────────── */
-.cimke {
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em;
-  text-transform: uppercase; color: #4a9e4a;
-  display: flex; align-items: center; gap: 0.6rem;
-}
-.cimke::before {
-  content: ''; display: inline-block;
-  width: 18px; height: 1px; background: #4a9e4a;
-}
-.lead { font-size: clamp(0.95rem, 1.3vw, 1.1rem); font-weight: 300; color: rgba(255,255,255,0.7); line-height: 1.65; }
-
-/* ═══════════════════════════════════════════════════
-   1. HERO
-═══════════════════════════════════════════════════ */
+/* Főoldal */
 .hero-dia {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 3rem;
 }
-
 .hero-tartalom {
   display: flex; flex-direction: column; align-items: flex-start;
   gap: 1.2rem; max-width: 900px; width: 100%; padding: 3rem 6vw 0;
   animation: fadeUp 0.9s ease both;
 }
-
 .hero-tartalom h1 {
   font-size: clamp(3rem, 8vw, 7rem); font-weight: 300;
   line-height: 1.0; letter-spacing: -0.03em; color: #fff;
@@ -148,15 +110,13 @@ header img { height: 36px; }
 .hero-tartalom h1 strong {
   font-weight: 700; -webkit-text-stroke: 1.5px #fff; color: transparent;
 }
-
 .hero-lead {
   font-size: clamp(0.95rem, 1.4vw, 1.1rem); font-weight: 300;
   color: rgba(255,255,255,0.6); max-width: 520px; line-height: 1.65;
   animation: fadeUp 0.9s ease 0.2s both;
 }
-
 .scroll-le-gomb {
-  width: 44px; height: 44px; border-radius: 999px;
+  width: 88px; height: 44px; border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.2); background: transparent;
   color: rgba(255,255,255,0.6); font-size: 1.1rem; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
@@ -164,9 +124,6 @@ header img { height: 36px; }
   animation: fadeUp 0.9s ease 0.4s both, bob 2s ease-in-out 1.5s infinite;
 }
 .scroll-le-gomb:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.4); }
-
-@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
-
 .hero-statisztika {
   display: flex; align-items: center; gap: 3rem;
   padding: 0 6vw; width: 100%;
@@ -174,7 +131,6 @@ header img { height: 36px; }
   padding-top: 2rem;
   animation: fadeUp 0.9s ease 0.5s both;
 }
-
 .hero-stat-elem { display: flex; flex-direction: column; gap: 0.2rem; }
 .hero-stat-szam {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 200;
@@ -184,24 +140,13 @@ header img { height: 36px; }
   font-size: 0.72rem; font-weight: 300; color: rgba(255,255,255,0.35);
   letter-spacing: 0.08em; text-transform: uppercase;
 }
-
-/* ═══════════════════════════════════════════════════
-   2–4. KÉPTÁR (galériák)
-═══════════════════════════════════════════════════ */
+/* projekt lap */
 .galeria-wrap { width: 100%; animation: fadeUp 0.8s ease 0.1s both; }
-
 .galeria-fejlec h2 {
   font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 300;
   line-height: 1.1; letter-spacing: -0.025em; color: #fff;
 }
-
-.projekt-szam {
-  font-size: 0.72rem; font-weight: 400; letter-spacing: 0.12em;
-  text-transform: uppercase; color: rgba(255,255,255,0.25);
-  white-space: nowrap; align-self: flex-end;
-}
-
-/* Galériakártyák */
+/* kártyák */
 .galeria-elem {
   position: relative;
   overflow: hidden;
@@ -214,7 +159,6 @@ header img { height: 36px; }
   display: flex; align-items: flex-end;
 }
 .galeria-elem.nagy { height: 328px; }
-
 .galeria-elem:hover {
   transform: translateY(-3px);
   border-color: rgba(45,106,45,0.4);
@@ -222,7 +166,6 @@ header img { height: 36px; }
 }
 .galeria-elem:hover .galeria-info { opacity: 1; transform: translateY(0); }
 .galeria-elem:hover .galeria-placeholder { transform: scale(1.05); }
-
 .galeria-placeholder {
   position: absolute; inset: 0;
   display: flex; align-items: center; justify-content: center;
@@ -231,7 +174,6 @@ header img { height: 36px; }
   transition: transform 0.4s ease;
 }
 .galeria-elem.nagy .galeria-placeholder { font-size: 5rem; }
-
 .galeria-info {
   position: relative; z-index: 2;
   padding: 1rem 1.2rem;
@@ -248,118 +190,9 @@ header img { height: 36px; }
   font-size: 0.72rem; font-weight: 300;
   color: rgba(255,255,255,0.5); margin: 0; letter-spacing: 0.04em;
 }
-
-/* ═══════════════════════════════════════════════════
-   LIGHTBOX
-═══════════════════════════════════════════════════ */
-.lightbox {
-  position: fixed; inset: 0; z-index: 500;
-  background: rgba(0,0,0,0.88);
-  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-  display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.lightbox.aktiv { opacity: 1; pointer-events: all; }
-
-.lb-zar {
-  position: absolute; top: 1.5rem; right: 1.5rem;
-  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-  color: rgba(255,255,255,0.7); border-radius: 999px;
-  width: 40px; height: 40px; font-size: 0.9rem; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.2s ease; z-index: 10;
-}
-.lb-zar:hover { background: rgba(255,255,255,0.15); color: #fff; }
-
-.lb-nav {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.6); border-radius: 999px;
-  width: 48px; height: 48px; font-size: 1.1rem; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.2s ease; z-index: 10;
-}
-.lb-nav:hover { background: rgba(255,255,255,0.14); color: #fff; }
-.lb-prev { left: 1.5rem; }
-.lb-next { right: 1.5rem; }
-
-.lb-tartalom {
-  display: flex; align-items: center; gap: 3rem;
-  max-width: 900px; width: 90%; padding: 2rem;
-  animation: fadeUp 0.3s ease both;
-}
-
-.lb-kep-wrap { flex: 1.2; }
-.lb-placeholder {
-  width: 100%; aspect-ratio: 4/3;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  border: 1px dashed rgba(255,255,255,0.12);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 5rem;
-}
-
-.lb-info {
-  flex: 1;
-  display: flex; flex-direction: column; gap: 0.9rem;
-}
-
-.lb-info h3 {
-  font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 300;
-  color: #fff; line-height: 1.2; letter-spacing: -0.02em;
-}
-
-.lb-info p {
-  font-size: 0.9rem; font-weight: 300;
-  color: rgba(255,255,255,0.55); line-height: 1.7;
-}
-
-.lb-meta {
-  display: flex; flex-direction: column; gap: 0.3rem;
-  padding-top: 0.8rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.8rem; font-weight: 300;
-  color: rgba(255,255,255,0.35); letter-spacing: 0.04em;
-}
-
-/* ═══════════════════════════════════════════════════
-   5. CTA
-═══════════════════════════════════════════════════ */
-.cta-dia { flex-direction: column; justify-content: center; }
-
-.cta-tartalom {
-  display: flex; flex-direction: column; align-items: center;
-  text-align: center; gap: 1.4rem; max-width: 640px; padding: 0 2rem;
-  animation: fadeUp 0.8s ease 0.1s both;
-}
-
-.cta-tartalom h2 {
-  font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 300;
-  line-height: 1.1; letter-spacing: -0.03em; color: #fff;
-}
-
-.cta-gombok {
-  display: flex; gap: 1rem; flex-wrap: wrap;
-  justify-content: center; margin-top: 0.5rem;
-}
-
-.cta-gomb {
-  display: inline-flex; align-items: center;
-  padding: 0.85rem 2rem; border-radius: 999px;
-  font-family: 'Helvetica Neue', sans-serif; font-size: 0.9rem;
-  font-weight: 400; letter-spacing: 0.04em; text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.75);
-  background: transparent; transition: all 0.25s ease;
-}
-.cta-gomb:hover { background: rgba(255,255,255,0.07); color: #fff; border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
-.cta-gomb.zold { background: #2d6a2d; border-color: transparent; color: #fff; }
-.cta-gomb.zold:hover { background: #3a8a3a; }
-
-/* ─── ANIMÁCIÓ ───────────────────────────────────── */
+/* Szöveg animáció */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
-
-/* ─── RESZPONZÍV ─────────────────────────────────── */
+/* Reszponzivitás */
 @media (max-width: 768px) {
   header { padding: 0 1.5rem; }
   .header-nav {
@@ -373,18 +206,11 @@ header img { height: 36px; }
   .header_bt { width: 100%; padding: 0.9rem 1.5rem; font-size: 1rem; text-align: left; }
   .header_bt.ajanlat { margin: 0.5rem 1.5rem; width: calc(100% - 3rem); justify-content: center; }
   .hamburger { display: flex; }
-
   .hero-tartalom h1 { font-size: clamp(2.5rem, 11vw, 4rem); }
   .hero-statisztika { gap: 1.5rem; flex-wrap: wrap; }
-
   .galeria-elem { height: 130px; }
   .galeria-elem.nagy { height: 200px; }
   .galeria-info { opacity: 1; transform: translateY(0); }
-
   .lb-tartalom { flex-direction: column; gap: 1.5rem; }
   .lb-nav { display: none; }
-
-  .oldal-nav { right: 0.8rem; }
-  .cta-gombok { flex-direction: column; align-items: center; }
-  .cta-gomb { width: 100%; justify-content: center; }
 }
