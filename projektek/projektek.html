@@ -149,7 +149,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-
+/*
 const wrap = document.getElementById('scrollWrap');
 const diak = document.querySelectorAll('.dia');
 const hatter = document.getElementById('hatter');
@@ -199,7 +199,44 @@ return false;
 }
 
 }
+*/
+        const wrap = document.getElementById('scrollWrap');
+const hatter = document.getElementById('hatter');
+const diak = document.querySelectorAll('.dia');
 
+
+wrap.addEventListener('scroll', () => {
+    let aktualis = 0;
+    diak.forEach((dia, i) => {
+        const rect = dia.getBoundingClientRect();
+        
+        if (rect.top <= window.innerHeight / 2) {
+            aktualis = i;
+        }
+    });
+    
+    hatter.style.opacity = aktualis === 0 ? '1' : '0';
+}, { passive: true }); 
+
+
+const hamburger = document.getElementById('hamburger');
+const headerNav = document.getElementById('headerNav');
+
+hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    headerNav.classList.toggle('nyitva');
+    hamburger.classList.toggle('aktiv');
+});
+
+document.addEventListener('click', (e) => {
+    if (!headerNav.contains(e.target) && !hamburger.contains(e.target)) {
+        headerNav.classList.remove('nyitva');
+        hamburger.classList.remove('aktiv');
+    }
+});
+
+
+// document.addEventListener('contextmenu', e => e.preventDefault());
     </script>
 
 </body>
