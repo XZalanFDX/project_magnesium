@@ -374,6 +374,26 @@ text-align:left;
 display:flex;
 }
 
+
+
+.scroll-wrap{
+height:auto;
+overflow-y:auto;
+scroll-snap-type:none;
+}
+
+.dia{
+height:auto;
+min-height:100vh;
+padding-top:90px;
+padding-bottom:60px;
+}
+
+.hero-dia{
+justify-content:flex-start;
+gap:40px;
+}
+
 .hero-tartalom h1{
 font-size:clamp(2.5rem,11vw,4rem);
 }
@@ -383,12 +403,18 @@ gap:1.5rem;
 flex-wrap:wrap;
 }
 
+
+
+.galeria-wrap{
+padding-bottom:40px;
+}
+
 .galeria-elem{
 height:130px;
 }
 
 .galeria-elem.nagy{
-height:200px;
+height:clamp(150px,40vw,200px);
 }
 
 .galeria-info{
