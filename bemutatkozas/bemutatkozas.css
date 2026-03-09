@@ -21,6 +21,7 @@ html, body {
   font-weight: 700;
 }
 
+/* Háttér */
 .hatter_video {
   position: fixed;
   inset: 0;
@@ -41,7 +42,7 @@ html, body {
   inset: 0;
   background: rgba(0,0,0,0.55);
 }
-
+/*header*/
 .fejlec {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -100,17 +101,6 @@ html, body {
 .nav_link:hover { color: #fff; }
 .nav_link:hover::after { transform: translateX(0); }
 
-.nav_link_kiemelt {
-  background: rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.85);
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.15);
-  margin-left: 0.5rem;
-  overflow: visible;
-}
-.nav_link_kiemelt::after { display: none; }
-.nav_link_kiemelt:hover { background: rgba(255,255,255,0.14); color: #fff; }
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -155,26 +145,6 @@ html, body {
 }
 .dia_sotet { background: #0a0f0a; }
 
-.oldal_nav {
-  position: fixed;
-  right: 1.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-}
-.oldal_pont {
-  width: 6px; height: 6px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.22);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.oldal_pont.aktiv { background: #fff; height: 20px; }
-.oldal_pont:hover { background: rgba(255,255,255,0.55); }
-
 .cimke {
   font-size: 0.72rem;
   letter-spacing: 0.2em;
@@ -182,12 +152,6 @@ html, body {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-}
-.cimke::before {
-  content: '';
-  display: inline-block;
-  width: 18px; height: 1px;
-  background: #4a9e4a;
 }
 
 .bevezeto {
@@ -247,100 +211,7 @@ html, body {
   color: rgba(255,255,255,0.35);
 }
 
-.tetel_kartya {
-  background: rgba(255,255,255,0.03);
-  transition: background 0.25s ease, border-color 0.25s ease;
-}
-.tetel_kartya:hover {
-  background: rgba(45,106,45,0.07);
-  border-color: rgba(45,106,45,0.3) !important;
-}
-.tetel_kartya_aktiv {
-  background: rgba(45,106,45,0.05);
-  border-color: rgba(74,158,74,0.35) !important;
-}
-
 .ev_szoveg { color: #4a9e4a; }
-
-.tetel_cim {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.tetel_szoveg {
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.45);
-}
-
-.tag_kartya {
-  background: rgba(255,255,255,0.04);
-  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
-}
-.tag_kartya:hover {
-  transform: translateY(-4px);
-  background: rgba(45,106,45,0.07);
-  border-color: rgba(45,106,45,0.3) !important;
-}
-
-.tag_foto {
-  aspect-ratio: 1;
-  background: rgba(255,255,255,0.05);
-  font-size: 2rem;
-}
-
-.tag_nev { font-size: 1rem; }
-
-.tag_szerep {
-  color: #4a9e4a;
-  letter-spacing: 0.05em;
-}
-
-.tag_leiras { color: rgba(255,255,255,0.4); }
-
-.dia_cta {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cta_blokk {
-  padding: 2rem 0;
-  animation: felfeleCsorog 0.8s ease 0.1s both;
-}
-
-.cta_cim {
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  color: #fff;
-}
-
-.gomb {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.85rem 2rem;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: rgba(255,255,255,0.75);
-  background: transparent;
-  transition: all 0.25s ease;
-}
-.gomb:hover {
-  background: rgba(255,255,255,0.07);
-  color: #fff;
-  border-color: rgba(255,255,255,0.4);
-  transform: translateY(-2px);
-}
-.gomb_zold {
-  background: #2d6a2d;
-  border-color: transparent;
-  color: #fff;
-}
-.gomb_zold:hover { background: #3a8a3a; }
 
 @keyframes felfeleCsorog {
   from { opacity: 0; transform: translateY(22px); }

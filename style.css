@@ -623,30 +623,6 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
-.oldal-nav {
-  position: fixed;
-  right: 1.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-}
-
-.nav-pont {
-  width: 6px; height: 6px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.22);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.nav-pont.aktiv {
-  background: #fff;
-  height: 20px;
-}
-.nav-pont:hover { background: rgba(255,255,255,0.55); }
-
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
