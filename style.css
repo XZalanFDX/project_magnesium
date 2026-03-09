@@ -139,7 +139,7 @@ header img {
 }
 
 
-.gorgoigazito {
+.igazito {
   position: relative;
   z-index: 10;
   height: 100vh;
@@ -149,7 +149,7 @@ header img {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.gorgoigazito::-webkit-scrollbar { display: none; }
+.igazito::-webkit-scrollbar { display: none; }
 
 
 .dia {
